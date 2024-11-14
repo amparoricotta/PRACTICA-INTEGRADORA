@@ -19,19 +19,4 @@ if (identificador && identificador.length >= 3) {
                         <img src="${data.recipes[i].image}" alt="">
                         <p>${data.recipes[i].name}</p>
                         <p>Nivel de dificultad: ${data.recipes[i].difficulty}</p>
-                        <a href="./receta.html">Ir al detalle</a>
-                    </article>`;
-                }
-            } else {
-                buscar = "<p>No se encontraron resultados para la búsqueda.</p>";
-            }
-            lista.innerHTML= buscar
-       
-       
-            })
-            .catch(function(error) {
-            console.log("Error: " + error);
-            })
-        }else {
-            resultados.innerHTML = "<p>Por favor, ingresa un término de búsqueda válido de al menos 3 caracteres.</p>";
-        }
+                  
