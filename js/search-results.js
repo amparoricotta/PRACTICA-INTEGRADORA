@@ -32,6 +32,4 @@ if (identificador && identificador.length >= 3) {
             .catch(function(error) {
             console.log("Error: " + error);
             })
-        }else {
-            resultados.innerHTML = "<p>Por favor, ingresa un término de búsqueda válido de al menos 3 caracteres.</p>";
-        
+        }
