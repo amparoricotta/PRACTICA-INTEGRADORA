@@ -11,7 +11,7 @@ fetch('https://dummyjson.com/recipes?limit=10')
     for (i=0; i<largoDelArray; i++){
         recetas+=`<article>
     <img src=  ${data.recipes[i].image} alt=''>
-    <p>${data.recipes[i].name} </p>
+    <h3>${data.recipes[i].name} </h3>
     <p>Nivel de dificultad: ${data.recipes[i].difficulty}</p>
     <a href="./receta.html?id=${data.recipes[i].id}">Ir al detalle</a>
 </article>`
@@ -47,7 +47,7 @@ boton.addEventListener('click', function(){
         for (i=0; i<10;i++){
             recetas+=`<article>
         <img src=  ${data.recipes[i].image} alt=''>
-        <p>${data.recipes[i].name} </p>
+        <h3>${data.recipes[i].name} </h3>
         <p>Nivel de dificultad: ${data.recipes[i].difficulty}</p>
         <a href="./receta.html?id=${data.recipes[i].id}">Ir al detalle</a>
     </article>`

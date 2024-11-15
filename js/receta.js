@@ -27,7 +27,7 @@ fetch(`https://dummyjson.com/recipes/${identificador}`)
           cate+=`<ul>
           <a href="category.html?id=${data.id}"><p>${data.tags[i]} </p></a></ul>`
         }
-        lista.innerHTML= categorias
+        lista.innerHTML= cate
     } )
 
     .catch(function(error){
