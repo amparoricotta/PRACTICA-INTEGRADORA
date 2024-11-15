@@ -24,17 +24,6 @@ fetch('https://dummyjson.com/recipes?limit=10')
 
 let boton = document.querySelector('.botonIndex')
 boton.addEventListener('click', function(){
-    // let recetas =""
-    // let lista = document.querySelector('.seccionIndex')
-    //     for(let i=10; i<20;i++){
-    //         recetas+=`<article>
-    //     <img src=  ${data.recipes[i].image} alt=''>
-    //     <p>${data.recipes[i].name} </p>
-    //     <p>Nivel de dificultad: ${data.recipes[i].difficulty}</p>
-    //     <a href="./receta.html">Ir al detalle</a>
-    // </article>`
-    //     }
-    //     lista.innerHTML = recetas
     fetch(`https://dummyjson.com/recipes?limit=10&skip=${largoDelArray}`)
     .then(function(response){
         return response.json()
