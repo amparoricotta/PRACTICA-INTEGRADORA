@@ -10,6 +10,6 @@ formulario.addEventListener("submit", function(evento){
         let mensajec="Por favor complete el campo contraseña"
         alert(mensajec)
     }else{
-        formulario.sumbit()
+        formulario.submit()
     }
     })

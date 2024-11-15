@@ -34,5 +34,4 @@ if (identificador && identificador.length >= 3) {
             })
         }else {
             resultados.innerHTML = "<p>Por favor, ingresa un término de búsqueda válido de al menos 3 caracteres.</p>";
-        }
-        /* hay que hacer otro fetch hola*/
+        
