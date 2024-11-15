@@ -18,7 +18,7 @@ if (identificador && identificador.length >= 3) {
                     buscar += `<article>
                         <img src="${data.recipes[i].image}" alt="">
                         <p>${data.recipes[i].name}</p>
-                        <p>Nivel de dificultad: ${data.recipes[i].difficulty}</p>
+                        <p>Nivel de dificultad: ${data.recipes[i].difficulty}.</p>
                         <a href="./receta.html">Ir al detalle</a>
                     </article>`;
                 }
@@ -34,5 +34,4 @@ if (identificador && identificador.length >= 3) {
             })
         }else {
             resultados.innerHTML = "<p>Por favor, ingresa un término de búsqueda válido de al menos 3 caracteres.</p>";
-        }
-        /* hay que hacer otro fetch*/
+        
