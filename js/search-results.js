@@ -21,7 +21,7 @@ if (identificador.length > 3) {
                         <img src="${data.recipes[i].image}" alt="">
                         <p>${data.recipes[i].name}</p>
                         <p>Nivel de dificultad: ${data.recipes[i].difficulty}.</p>
-                        <a href="./receta.html">Ir al detalle</a>
+                        <a href="./receta.html?id=${data.recipes[i].id}">Ir al detalle</a>
                     </article>`;
                 }
             } else {
