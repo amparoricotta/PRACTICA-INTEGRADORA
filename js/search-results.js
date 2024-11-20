@@ -28,9 +28,9 @@ if (identificador.length > 3) {
                 buscar = "<p>No se encontraron resultados para la búsqueda.</p>";
             }
             lista.innerHTML= buscar
-       
-       
             })
+
+            
             .catch(function(error) {
             console.log("Error: " + error);
             })
