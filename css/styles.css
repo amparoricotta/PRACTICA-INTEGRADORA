@@ -227,10 +227,41 @@ footer {
     margin-top: 10px;
  }
  
+ /* CATEGORIES  --------------------------------------------------------*/
+.tituloCategorias {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+ }
  
  
+ ul.seccionSR {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    width: 800px;
+ }
  
- /* Receta ESTO LO TUVE QUE CAMBIAR ACA PORQUE NO ME TOMABA EN EL OTRO  --------------------------------------------------------*/ 
+ 
+ ul.seccionSR li {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+    padding: 10px 20px;
+ 
+ 
+ }
+ ul.seccionSR li a {
+    text-decoration: none;
+    color: rgb(76, 174, 79);
+    font-weight: bold;
+ }
+ 
+ /* Receta --------------------------------------------------------*/ 
  .subtitulos{
      color: rgb(46, 165, 42);
      margin-top: 5px;
@@ -253,8 +284,6 @@ footer {
      border-radius: 8px;
      box-shadow: 0 2px 4px rgb(82, 82, 82);
  }
- 
- 
  
  .secCategorias a {
      background-color: rgb(255, 255, 255);

@@ -24,18 +24,21 @@
         </nav>
       </header>
     <main>
-        <section class="contenedorRegister">
-            <form action="login.html" method="get" class="formRegister">
-                <label>Email</label>
-                <input type="email" name="email"  class="emailRegister" placeholder="Escriba aquí...">
-                <label for="Contraseña">Contraseña</label>
-                <input type="password" name="password"  class="contraseñaRegister" placeholder="Escriba aquí...">
-                <label for="checkbox">Términos y Condiciones</label>
-                <input type="checkbox" name="checkbox">
-                <a href="login.html">Ya tengo cuenta</a>
-                <button type="submit" class="botonRegister">Enviar</button>
-            </form>
-        </section>
+        <h1 class="tituloForms">REGISTRO</h1>
+  <section class="contenedorForms">
+      <form action="login.html" method="get">
+          <label>Email</label>
+          <input type="email" name="email" required class="emailRegister">
+          <label for="Contraseña">Contraseña</label>
+          <input type="password" name="password" required class="contraseñaRegister">
+          <div class="checkbox">
+          <label class="checkbox" for="checkbox">Términos y Condiciones</label>
+          <input type="checkbox" name="checkbox">
+           </div>
+          <a href="login.html">Ya tengo cuenta</a>
+          <button type="submit" class="botonRegister">Enviar</button>
+      </form>
+  </section>
     </main>
 
    <script src="./js/register.js"></script>
