@@ -1,0 +1,65 @@
+/* General  --------------------------------------------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ nav{
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    
+ }
+ ul{
+    list-style: none;
+ }
+ li{
+    margin-top: 20px;
+ }
+ a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+ }
+ 
+ 
+ 
+ 
+ 
+ /* Receta ESTO LO TUVE QUE CAMBIAR ACA PORQUE NO ME TOMABA EN EL OTRO  --------------------------------------------------------*/ 
+ .subtitulos{
+     color: rgb(46, 165, 42);
+     margin-top: 5px;
+     margin-bottom: 5px;
+     margin-left: 5px;
+     font-size: 20px;
+ }
+ .imgReceta{
+     max-width: 50%;
+     height: 25%;
+     display: flex;
+     align-items: center; 
+     margin-left: 25%;
+ }
+ .sectionReceta{
+     max-width: 1200px;
+     margin: 20px auto;
+     padding: 20px;
+     background: #fff;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgb(82, 82, 82);
+ }
+ 
+ 
+ 
+ .secCategorias a {
+     background-color: rgb(255, 255, 255);
+     border: 1px solid rgb(222, 222, 222);
+     border-radius: 5px;
+     padding: 10px 20px;
+     display: flex;
+     max-width: 15%;
+     margin-left: 5px;
+ 
+ }
