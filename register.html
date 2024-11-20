@@ -6,18 +6,38 @@
    <title>Document</title>
 </head>
 <body>
-   <section class="contenedorRegister">
-       <form action="login.html" method="get">
-           <label>Email</label>
-           <input type="email" name="email"  class="emailRegister" placeholder="Escriba aquí...">
-           <label for="Contraseña">Contraseña</label>
-           <input type="password" name="password"  class="contraseñaRegister" placeholder="Escriba aquí...">
-           <label for="checkbox">Términos y Condiciones</label>
-           <input type="checkbox" name="checkbox">
-           <a href="login.html">Ya tengo cuenta</a>
-           <button type="submit" class="botonRegister">Enviar</button>
-       </form>
-   </section>
+    <header>
+        <img src="" alt="logo">
+        <form action="search-results.html" method="GET">
+            <input type="text" name="q" placeholder="Buscar recetas..." class="inputBuscador">
+            <button type="submit">BUSCAR</button>
+            <p id="mensajeError"></p>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./ categories.html">CATEGORIAS</a></li>
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./register.html">REGISTRO</a></li>
+            </ul>
+    
+        </nav>
+      </header>
+    <main>
+        <section class="contenedorRegister">
+            <form action="login.html" method="get">
+                <label>Email</label>
+                <input type="email" name="email"  class="emailRegister" placeholder="Escriba aquí...">
+                <label for="Contraseña">Contraseña</label>
+                <input type="password" name="password"  class="contraseñaRegister" placeholder="Escriba aquí...">
+                <label for="checkbox">Términos y Condiciones</label>
+                <input type="checkbox" name="checkbox">
+                <a href="login.html">Ya tengo cuenta</a>
+                <button type="submit" class="botonRegister">Enviar</button>
+            </form>
+        </section>
+    </main>
+
    <script src="./js/register.js"></script>
 </body>
 </html>

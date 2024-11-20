@@ -7,19 +7,41 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+  <header>
+    <img src="" alt="logo">
+    <form action="search-results.html" method="GET">
+        <input type="text" name="q" placeholder="Buscar recetas..." class="inputBuscador">
+        <button type="submit">BUSCAR</button>
+        <p id="mensajeError"></p>
+    </form>
+    <nav>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./ categories.html">CATEGORIAS</a></li>
+            <li><a href="./login.html">LOGIN</a></li>
+            <li><a href="./register.html">REGISTRO</a></li>
+        </ul>
+
+    </nav>
+  </header>
+
+<main>
   <section class="sectionReceta">
-  <h1 class="nombre"></h1>
-  <h3 class="subtitulos">Instrucciones de preparación: </h3><p class="instrucciones"></p>
-  <h3 class="subtitulos">Tiempo de cocción (minutos): </h3>
-  <p class="tiempo"></p>
-</section>
-  <img src="" alt="" class="imgReceta">
-  <section class="secCategorias">
-  <h3 class="subtitulos">Categorías: </h3>
-  <ul class="categorias">
-    <a href="../PRACTICA-INTEGRADORA/ category.html"></a>
-  </ul>
-</section>
+    <h1 class="nombre"></h1>
+    <h3 class="subtitulos">Instrucciones de preparación: </h3><p class="instrucciones"></p>
+    <h3 class="subtitulos">Tiempo de cocción (minutos): </h3>
+    <p class="tiempo"></p>
+  </section>
+    <img src="" alt="" class="imgReceta">
+    <section class="secCategorias">
+    <h3 class="subtitulos">Categorías: </h3>
+    <ul class="categorias">
+      <a href="../PRACTICA-INTEGRADORA/ category.html"></a>
+    </ul>
+  </section>
+
+</main>
+
   <script src="./js/receta.js"></script> 
 </body>
 </html>
