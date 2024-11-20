@@ -147,7 +147,86 @@ main h1 {
  } 
  
 
+/* Footer  --------------------------------------------------------*/
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #606060;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+ }
 
+ 
+ /* LOGIN Y REGISTER  --------------------------------------------------------*/
+
+
+.contenedorForms{
+    width: 100%;
+    margin-left: 36%;
+    margin-top: 50px;
+   
+ }
+ .contenedorForms form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 80px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 8px;
+    width: 400px;
+    font-size: x-large;
+    background-color: rgb(230, 230, 230);
+   
+  }
+ .contenedorForms button{
+    margin-top: 15px;
+    text-align: center;
+    background-color: rgb(76, 174, 79);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+ }
+ 
+ 
+ .tituloForms{
+    margin: 15px;
+    text-align: center;
+    margin-top: 25px;
+ }
+ .contenedorForms form a{
+    margin-top:25px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+ }
+ .contenedorForms form label{
+    margin-top:10px;
+    margin-bottom: 10px;
+ }
+ .emailRegister, .contraseñaRegister{
+    width: 300px;
+    height: 25px;
+ }
+ .contraseñaLogin, .emailLogin{
+    width: 300px;
+    height: 25px;
+ }
+ 
+ 
+ .checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+ }
+ 
  
  
  
