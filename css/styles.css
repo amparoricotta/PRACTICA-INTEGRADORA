@@ -23,7 +23,131 @@
     font-size: 20px;
  }
  
+ body {
+    color: grey;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+ }
+/* Header  --------------------------------------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgb(rgb(151, 218, 84));
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+ }
+ header img {
+    height: 70px;
+    margin-right: 0;
+ }
  
+ 
+ header form {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+ }
+ header input {
+    padding: 8px;
+    width: 200px;
+ 
+ 
+ }
+ header button {
+    padding: 8px 12px;
+    background-color: white;
+    color: rgb(78, 175, 78);
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ 
+ header nav ul {
+    list-style: none;
+    display: flex;
+    gap:10px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ 
+ header nav ul a{
+ text-decoration: none;
+ color: #4caf50;
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+ }
+/* Main index  --------------------------------------------------------*/
+main h1 {
+    font-size: 60px;
+    color: rgb(78, 175, 78);
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ 
+ .seccionIndex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1480px;
+    justify-content: center;
+ }
+ 
+ 
+ .botonIndex {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-bottom: 10px;
+ }
+ 
+ 
+ .seccionIndex article{
+    width: 350px;
+   margin:10px;
+   text-align:center;
+ 
+ 
+ }
+ 
+ 
+ .seccionIndex article img {
+    width: 100%;
+     }
+    
+ 
+ 
+ 
+ 
+ .seccionIndex article a {
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .seccionIndex article p{
+   font-weight: bold;
+   margin: 5px;
+   font-size: larger;
+   font-family: Arial, Helvetica, sans-serif;
+ 
+ 
+ } 
+ 
+
+
  
  
  
