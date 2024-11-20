@@ -1,7 +1,29 @@
-let formulario= document.querySelector("form")
+
+    // buscador 
+let formulario = document.querySelector('.formBuscador')
+let completar = document.querySelector('.inputBuscador')
+let mensajeError = document.querySelector('#mensajeError')
+
+formulario.addEventListener('submit', function(evento){
+     evento.preventDefault();
+     if(completar.value == ''){
+         console.log('buscador vacio')
+         mensajeError.innerText = 'Campo de busqueda vacio'
+     }else if(completar.value.length < 3){
+         console.log('caracteres insuficientes')
+         mensajeError.innerText = 'Ingrese al menos 3 caracteres'
+     }else{
+         formulario.submit()
+     }
+
+ })
+
+
+
+let formularioRegsiter = document.querySelector('.formRegister')
 let email= document.querySelector(".emailRegister")
 let password= document.querySelector(".contraseñaRegister")
-formulario.addEventListener("submit", function(evento){
+formularioRegsiter.addEventListener("submit", function(evento){
     evento.preventDefault()
     if (email.value== ""){
         let mensaje= "Por favor complete el campo email"
@@ -10,7 +32,7 @@ formulario.addEventListener("submit", function(evento){
         let mensajec="Por favor complete el campo contraseña"
         alert(mensajec)
     }else{
-        formulario.submit()
+        formularioRegsiter.submit()
     }
     })
 

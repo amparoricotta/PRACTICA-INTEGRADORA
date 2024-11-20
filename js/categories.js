@@ -17,5 +17,23 @@ fetch('https://dummyjson.com/recipes/tags')
     })
 
 
+// buscador 
+let formulario = document.querySelector('form')
+let completar = document.querySelector('.inputBuscador')
+let mensajeError = document.querySelector('#mensajeError')
+
+formulario.addEventListener('submit', function(evento){
+     evento.preventDefault();
+     if(completar.value == ''){
+         console.log('buscador vacio')
+         mensajeError.innerText = 'Campo de busqueda vacio'
+     }else if(completar.value.length < 3){
+         console.log('caracteres insuficientes')
+         mensajeError.innerText = 'Ingrese al menos 3 caracteres'
+     }else{
+         formulario.submit()
+     }
+
+ })
 
 
