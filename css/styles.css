@@ -295,3 +295,7 @@ footer {
      margin-left: 5px;
  
  }
+
+ #mensajeError{
+    color: black;
+ }
