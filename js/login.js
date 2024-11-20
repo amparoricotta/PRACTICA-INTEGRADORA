@@ -13,3 +13,4 @@ formulario.addEventListener("submit", function(evento){
         formulario.submit()
     }
     })
+// EL POSTA
