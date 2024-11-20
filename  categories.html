@@ -2,15 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Categories</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
         <img src="../PRACTICA-INTEGRADORA/img/gorrochef.webp" alt="logo">
-        <form action="search-results.html" method="GET">
+        <form action="search-results.html" method="GET" id="forms">
+            <div>
             <input type="text" name="q" placeholder="Buscar recetas..." class="inputBuscador">
             <button type="submit">BUSCAR</button>
+            </div>
+            <br>  
             <p id="mensajeError"></p>
         </form>
         <nav>
@@ -25,7 +28,7 @@
     </header>
     <main>
         <h1 class="tituloCategorias">CATEGORIAS</h1>
-        <ul class="seccionSR">
+        <ul class="seccionCat">
     </main>
     
 

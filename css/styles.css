@@ -3,13 +3,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
  }
  nav{
     margin-top: 40px;
     margin-left: 40px;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;   
  }
 
  li{
@@ -30,7 +30,7 @@
 /* Header  --------------------------------------------------------*/
 header {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     padding: 10px 20px;
     background: rgb(rgb(151, 218, 84));
@@ -43,7 +43,6 @@ header {
     margin-right: 0;
  }
  
- 
  header form {
     display: flex;
     align-items: center;
@@ -52,9 +51,8 @@ header {
  header input {
     padding: 8px;
     width: 200px;
- 
- 
  }
+
  header button {
     padding: 8px 12px;
     background-color: white;
@@ -85,9 +83,7 @@ main h1 {
     font-size: 60px;
     color: rgb(78, 175, 78);
     margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
  }
- 
  
  .seccionIndex {
     display: flex;
@@ -105,46 +101,32 @@ main h1 {
     border: none;
     border-radius: 8px;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
     margin-left: 10px;
     margin-bottom: 10px;
  }
- 
  
  .seccionIndex article{
     width: 350px;
    margin:10px;
    text-align:center;
  
- 
  }
- 
- 
  .seccionIndex article img {
     width: 100%;
      }
-    
- 
- 
- 
- 
+
  .seccionIndex article a {
     text-decoration: none;
     color: green;
     font-size: 18px;
     margin-top: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+
  }
  .seccionIndex article p{
-   font-weight: bold;
    margin: 5px;
    font-size: larger;
-   font-family: Arial, Helvetica, sans-serif;
- 
- 
  } 
  
-
 /* Footer  --------------------------------------------------------*/
 footer {
     text-align: center;
@@ -152,14 +134,10 @@ footer {
     background-color: #606060;
     color: white;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-   
+    font-family: Arial, Helvetica, sans-serif;  
  }
 
- 
  /* LOGIN Y REGISTER  --------------------------------------------------------*/
-
-
 .contenedorForms{
     width: 100%;
     margin-left: 36%;
@@ -190,7 +168,6 @@ footer {
     font-size: 20px;
  }
  
- 
  .tituloForms{
     margin: 15px;
     text-align: center;
@@ -216,7 +193,6 @@ footer {
     height: 25px;
  }
  
- 
  .checkbox{
     display: flex;
     align-items: center;
@@ -232,8 +208,7 @@ footer {
     color: #555;
  }
  
- 
- ul.seccionSR {
+ ul.seccionCat {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -244,16 +219,15 @@ footer {
     width: 800px;
  }
  
- 
- ul.seccionSR li {
+
+ ul.seccionCat li {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(222, 222, 222);
     border-radius: 5px;
     padding: 10px 20px;
- 
- 
+
  }
- ul.seccionSR li a {
+ ul.seccionCat li a {
     text-decoration: none;
     color: rgb(76, 174, 79);
     font-weight: bold;
@@ -291,9 +265,119 @@ footer {
      display: flex;
      max-width: 15%;
      margin-left: 5px;
- 
  }
 
  #mensajeError{
     color: black;
  }
+
+/* Category --------------------------------------------------------*/ 
+
+main h1 {
+    font-size: 60px;
+    color: rgb(78, 175, 78);
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .sectionCategory {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1480px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-bottom: 10px;
+ }
+ 
+ .sectionCategory article{
+    width: 350px;
+   margin:10px;
+   text-align:center;
+ }
+ 
+ .sectionCategory article img {
+    width: 100%;
+     }
+
+ .sectionCategory article a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .sectionCategory article p{
+   margin: 5px;
+   font-size: larger;
+   font-family: Arial, Helvetica, sans-serif;
+ } 
+ /* Search results --------------------------------------------------------*/ 
+ .seccionSR {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1480px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-bottom: 10px;
+ }
+ 
+ .seccionSR article{
+    width: 350px;
+   margin:10px;
+   text-align:center;
+ }
+ 
+ .seccionSR article img {
+    width: 100%;
+     }
+ .seccionSR article a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .seccionSR article p{
+   margin: 5px;
+   font-size: larger;
+   font-family: Arial, Helvetica, sans-serif;
+ } 
+
+ #forms{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .seccionSR  article a{
+    text-decoration: none;
+    color: green;
+    font-size: 18px;
+    margin-top: 5px;
+ }
+ .seccionSR article p{
+    margin: 5px;
+    font-size: larger;
+    color: grey;
+  } 
+  
+  .seccionSR article h3{
+    margin: 5px;
+    font-size: larger;
+    color: grey;
+  } 
+  

@@ -14,7 +14,7 @@ fetch(`https://dummyjson.com/recipes/tag/${identificador}`)
     h1.innerHTML = `${identificador}`
     for (let i = 0; i < data.recipes.length; i++) {
         resultados += `<article>
-            <img src="${data.recipes[i].image}" alt="">
+            <img src="${data.recipes[i].image}" alt="" class="imgCategory">
             <h3>${data.recipes[i].name}</h3>
             <p>Nivel de dificultad: ${data.recipes[i].difficulty}.</p>
             <a href="./receta.html?id=${data.recipes[i].id}">Ir al detalle</a>
@@ -37,9 +37,11 @@ formulario.addEventListener('submit', function(evento){
      if(completar.value == ''){
          console.log('buscador vacio')
          mensajeError.innerText = 'Campo de busqueda vacio'
+         mensajeError.style.color = "red"
      }else if(completar.value.length < 3){
          console.log('caracteres insuficientes')
          mensajeError.innerText = 'Ingrese al menos 3 caracteres'
+         mensajeError.style.color = "red"
      }else{
          formulario.submit()
      }

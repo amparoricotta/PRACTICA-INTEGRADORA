@@ -60,10 +60,13 @@ formulario.addEventListener('submit', function(evento){
      evento.preventDefault();
      if(completar.value == ''){
          console.log('buscador vacio')
-         mensajeError.innerText = 'Campo de busqueda vacio'
+         mensajeError.innerText = 'Campo de búsqueda vacío'
+         mensajeError.style.color = "red"
+
      }else if(completar.value.length < 3){
          console.log('caracteres insuficientes')
          mensajeError.innerText = 'Ingrese al menos 3 caracteres'
+         mensajeError.style.color = "red"
      }else{
          formulario.submit()
      }

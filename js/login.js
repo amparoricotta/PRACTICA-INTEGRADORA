@@ -9,9 +9,11 @@ formulario.addEventListener('submit', function(evento){
      if(completar.value == ''){
          console.log('buscador vacio')
          mensajeError.innerText = 'Campo de busqueda vacio'
+         mensajeError.style.color = "red"
      }else if(completar.value.length < 3){
          console.log('caracteres insuficientes')
          mensajeError.innerText = 'Ingrese al menos 3 caracteres'
+         mensajeError.style.color = "red"
      }else{
          formulario.submit()
      }
@@ -26,6 +28,7 @@ formularioLogin.addEventListener("submit", function(evento){
     if (email.value== ""){
         let mensaje= "Por favor complete el campo email"
         alert(mensaje)
+        
     }else if (password.value== ""){
         let mensajec="Por favor complete el campo contraseña"
         alert(mensajec)

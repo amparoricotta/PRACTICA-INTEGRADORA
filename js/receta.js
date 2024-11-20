@@ -19,7 +19,7 @@ fetch(`https://dummyjson.com/recipes/${identificador}`)
         let inst =''
         for (i=0; i<data.instructions.length;i++){
             inst+=`<li>${data.instructions[i]}</li>`
-            //esto no nos anda
+    
 
         }
         instrucciones.innerHTML=inst
@@ -55,9 +55,11 @@ formulario.addEventListener('submit', function(evento){
      if(completar.value == ''){
          console.log('buscador vacio')
          mensajeError.innerText = 'Campo de busqueda vacio'
+         mensajeError.style.color = "red"
      }else if(completar.value.length < 3){
          console.log('caracteres insuficientes')
          mensajeError.innerText = 'Ingrese al menos 3 caracteres'
+         mensajeError.style.color = "red"
      }else{
          formulario.submit()
      }
