@@ -30,20 +30,28 @@ boton.addEventListener('click', function(){
         return response.json()
     })
     .then(function(data){
-        console.log(data)
-        let lista = document.querySelector('.seccionIndex')
-        let recetas = ''
-        todas = data.recipes
-        for (i=0; i<10;i++){
-            recetas+=`<article>
-        <img src=  ${data.recipes[i].image} alt=''>
-        <h3>${data.recipes[i].name} </h3>
-        <p>Nivel de dificultad: ${data.recipes[i].difficulty}</p>
-        <a href="./receta.html?id=${data.recipes[i].id}">Ir al detalle</a>
-    </article>`
-        }
-        lista.innerHTML += recetas
-        largoDelArray += 10;
+if (data.recipes.length >0){
+    console.log(data)
+    let lista = document.querySelector('.seccionIndex')
+    let recetas = ''
+    todas = data.recipes
+    for (i=0; i<10;i++){
+        recetas+=`<article>
+    <img src=  ${data.recipes[i].image} alt=''>
+    <h3>${data.recipes[i].name} </h3>
+    <p>Nivel de dificultad: ${data.recipes[i].difficulty}</p>
+    <a href="./receta.html?id=${data.recipes[i].id}">Ir al detalle</a>
+</article>`
+    }
+    lista.innerHTML += recetas
+    largoDelArray += 10;
+
+}else{
+    boton.style.display = 'none'
+
+}
+
+
     })
     .catch(function(error){
         console.log("Error: " + error)
