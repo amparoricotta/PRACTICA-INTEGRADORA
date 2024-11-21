@@ -37,6 +37,7 @@ fetch(`https://dummyjson.com/recipes/${identificador}`)
           cate+=`<li><a href="../PRACTICA-INTEGRADORA/ category.html?id=${data.tags[i]}">${data.tags[i]}</a></li>`
         }
         lista.innerHTML= cate
+
     } )
 
     .catch(function(error){
