@@ -1,5 +1,6 @@
 let resultados = document.querySelector('.seccionSR')
 let error = document.querySelector('#mensajeError')
+let mensaje = document.querySelector('.ResultadosBusqueda')
 
 let queryString = location.search;
 let queryStringObjeto = new URLSearchParams(queryString);
@@ -23,6 +24,9 @@ fetch(`https://dummyjson.com/recipes/search?q=${identificador}`)
                     <p>Nivel de dificultad: ${data.recipes[i].difficulty}.</p>
                     <a class="botonSR" href="./receta.html?id=${data.recipes[i].id}">Ir al detalle</a>
                 </article>`;
+            
+                mensaje.innerText = `Resultados de búsqueda para ${identificador}`
+
             }
         } else {
             buscar = "<p>No se encontraron resultados para la búsqueda.</p>";
