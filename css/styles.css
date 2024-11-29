@@ -439,7 +439,17 @@ main h1 {
     font-size: larger;
     color: grey;
   } 
+
+  .mainSR{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+  }
   
+  .ResultadosBusqueda{
+text-align: center;
+
+  }
 /* Media queries --------------------------------------------------------*/ 
 @media (max-width : 420px) { 
     header img{
