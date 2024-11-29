@@ -25,16 +25,19 @@ formulario.addEventListener('submit', function(evento){
 let formularioRegsiter = document.querySelector('.formRegister')
 let email= document.querySelector(".emailRegister")
 let password= document.querySelector(".contraseñaRegister")
+let errormsj=document.querySelector(".errormsj")
+let errorcontra=document.querySelector(".errorcontra")
 formularioRegsiter.addEventListener("submit", function(evento){
     evento.preventDefault()
     if (email.value== ""){
-        let mensaje= "Por favor complete el campo email"
-        alert(mensaje)
+        console.log('buscador vacio')
+            errormsj.innerText = "Por favor complete el campo email"
+            errormsj.style.color = "red"
+    
     }else if (password.value== ""){
-        let mensajec="Por favor complete el campo contraseña"
-        alert(mensajec)
+        errorcontra.innerText = "Por favor complete el campo contraseña"
+            errorcontra.style.color = "red"
     }else{
         formularioRegsiter.submit()
     }
     })
-

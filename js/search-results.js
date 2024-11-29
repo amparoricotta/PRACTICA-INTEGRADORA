@@ -7,6 +7,7 @@ let identificador = queryStringObjeto.get('q');
 
 let lista= document.querySelector('.seccionSR')
 let buscar=""
+let h1SeccionSR = document.querySelector(".h1SeccionSR")
 
 fetch(`https://dummyjson.com/recipes/search?q=${identificador}`)
     .then(function(response){
@@ -14,8 +15,9 @@ fetch(`https://dummyjson.com/recipes/search?q=${identificador}`)
     })
     .then(function(data) {
         console.log(data);
-            
+        
         if (data.recipes.length > 0) {
+            h1SeccionSR.innerText = `Resultados para ${identificador}`
             for (let i = 0; i < data.recipes.length; i++) {
                 buscar += `<article>
                     <img src="${data.recipes[i].image}" alt="">

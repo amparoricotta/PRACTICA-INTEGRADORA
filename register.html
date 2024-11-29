@@ -11,7 +11,7 @@
         <img src="../PRACTICA-INTEGRADORA/img/gorrochef.webp" alt="logo">
         <form action="search-results.html" method="GET" id="forms" class="formBuscador">
             <div>
-            <input type="text" name="q" placeholder="Buscar recetas..." class="inputBuscador">
+            <input type="text" name="q" placeholder="Buscar recetas..." value="" class="inputBuscador">
             <button type="submit">BUSCAR</button>
             </div>
             <br>  
@@ -32,12 +32,14 @@
   <section class="contenedorForms">
       <form action="login.html" method="get" class="formRegister">
           <label>Email</label>
-          <input type="email" name="email" class="emailRegister">
+          <input type="email" name="email" class="emailRegister" value="">
+          <p class="errormsj"></p>
           <label for="Contraseña">Contraseña</label>
-          <input type="password" name="password" class="contraseñaRegister">
+          <input type="password" name="password" class="contraseñaRegister" value="">
+          <p class="errorcontra"></p>
           <div class="checkbox">
           <label class="checkbox" for="checkbox">Términos y Condiciones</label>
-          <input type="checkbox" name="checkbox">
+          <input type="checkbox" name="checkbox" value="termino">
            </div>
           <a href="login.html">Ya tengo cuenta</a>
           <button type="submit" class="botonRegister">Enviar</button>

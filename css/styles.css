@@ -27,6 +27,8 @@
     margin: 0;
     padding: 0;
  }
+
+
 /* Header  --------------------------------------------------------*/
 header {
     display: flex;
@@ -212,7 +214,13 @@ footer div {
     font-size: 20px;
     margin-top: 10px;
  }
- 
+
+ .errormsj{
+   font-size:15px ;
+ }
+ .errorcontra{
+   font-size:15px ;
+ }
  /* CATEGORIES  --------------------------------------------------------*/
 .tituloCategorias {
     text-align: center;
@@ -264,6 +272,7 @@ footer div {
      padding: 20px;
      background: #fff;
      border-radius: 8px;
+     margin: 10px;
      box-shadow: 0 2px 4px rgb(82, 82, 82);
      margin-bottom: 20px
  }
@@ -281,7 +290,7 @@ footer div {
  .secCategorias{
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
    width: 100%;
    
  }
@@ -298,6 +307,19 @@ footer div {
 
  .mainReceta ul {
    list-style: none;
+ }
+
+ .categorias li a{
+   color:grey;
+   font-size: 20px;
+   justify-content: center;
+
+ }
+
+
+
+ .subtitulos{
+   padding-top: 10px;
  }
    
 /* Category --------------------------------------------------------*/ 
@@ -393,7 +415,10 @@ main h1 {
    font-size: larger;
    font-family: Arial, Helvetica, sans-serif;
  } 
-
+ .h1SeccionSR{
+   font-size: 50px;
+ }
+ 
  #forms{
     display: flex;
     flex-direction: column;
@@ -418,12 +443,12 @@ main h1 {
 /* Media queries --------------------------------------------------------*/ 
 @media (max-width : 420px) { 
     header img{
-        display: none;
+        width: 50px;
+        height: 50px;
     }
     header{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column-reverse;
         align-items: center;
         
         
@@ -450,8 +475,6 @@ main h1 {
         color: #555;
     }
 
- 
-
     .subtitulos{
         font-size: 22px;
         text-align: center;
@@ -462,6 +485,26 @@ main h1 {
         align-items: center;
         max-width: fit-content;
 
+    }
+    .sectionReceta{
+      margin: 10px;
+    }
+
+    .categorias li a{
+      color:grey;
+      font-size: 15px;
+      justify-content: center;
+
+    }
+
+    .secCategorias{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .subtitulos{
+      padding-top: 10px;
     }
 
 
