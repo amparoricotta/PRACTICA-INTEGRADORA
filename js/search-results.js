@@ -1,7 +1,5 @@
 let resultados = document.querySelector('.seccionSR')
 let error = document.querySelector('#mensajeError')
-let mensaje = document.querySelector('.ResultadosBusqueda')
-
 let queryString = location.search;
 let queryStringObjeto = new URLSearchParams(queryString);
 let identificador = queryStringObjeto.get('q');
@@ -18,7 +16,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${identificador}`)
         console.log(data);
         
         if (data.recipes.length > 0) {
-            h1SeccionSR.innerText = `Resultados para ${identificador}`
+            h1SeccionSR.innerText = `Resultados de búsqueda para ${identificador}`
             for (let i = 0; i < data.recipes.length; i++) {
                 buscar += `<article>
                     <img src="${data.recipes[i].image}" alt="">
@@ -26,8 +24,7 @@ fetch(`https://dummyjson.com/recipes/search?q=${identificador}`)
                     <p>Nivel de dificultad: ${data.recipes[i].difficulty}.</p>
                     <a class="botonSR" href="./receta.html?id=${data.recipes[i].id}">Ir al detalle</a>
                 </article>`;
-            
-                mensaje.innerText = `Resultados de búsqueda para ${identificador}`
+        
 
             }
         } else {

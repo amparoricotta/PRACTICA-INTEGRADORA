@@ -216,10 +216,10 @@ footer div {
  }
 
  .errormsj{
-   font-size:15px ;
+   font-size:13px ;
  }
  .errorcontra{
-   font-size:15px ;
+   font-size:13px ;
  }
  /* CATEGORIES  --------------------------------------------------------*/
 .tituloCategorias {
@@ -417,6 +417,7 @@ main h1 {
  } 
  .h1SeccionSR{
    font-size: 50px;
+   text-align: center;
  }
  
  #forms{
@@ -515,6 +516,11 @@ text-align: center;
 
     .subtitulos{
       padding-top: 10px;
+    }
+
+    .h1SeccionSR{
+      font-size: 20px;
+   
     }
 
 
